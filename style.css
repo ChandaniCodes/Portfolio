@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+}
+/*for scrolling*/
+html{
+	scroll-behavior: smooth;
+}
+body {	
+	height: 100vh;
+	width: 100%;
+	background-image: url('images/backgrond.jpg');
+	background-size: cover;
+}
+.navbar-inverse{
+	background-color: transparent;
+	border:none;
+	padding-left: 20px;
+	padding-top: 5px;
+}
+nav span{
+	font-family: 'Monoton', cursive;
+	color: #0099cc;
+	font-size: 40px;
+}
+#menu{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	right: -2000px;
+	top: 0;
+	background-color:rgba(0, 96, 128,0.95);
+	transition: 1s all;
+}
+#menu .btn-close{
+	font-size: 25px;
+	color: #fff;
+	background: transparent;
+	border:none;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top: 10px;
+}
+#menu .menu-content{
+	position: absolute;
+	top: 30%;
+	left: 45%;
+	text-align: center;
+}
+#menu .menu-content a{
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 10px;
+
+}
+#menu .menu-content a:hover{
+	background-color: #fff;
+	color:#0099cc;
+	padding-left:20px;
+	padding-right:20px;
+	text-decoration: none;
+}
+.navbar-header .btn-menu{
+	position: absolute;
+	right: 9px;
+	background: transparent;
+	border:none;
+}
+.navbar-header .btn-menu span{	font-size: 25px;}
+
+/*All about me*/
+#all-about-me{
+	width: 100%;
+	background-color: rgba(245, 245, 240,0.94);
+}
+
+#aboutMe,#skills,#project,#experience,#achievement,#contact-me{
+	padding-left: 45px;padding-right:45px;
+}
+
+/*home section code*/
+#home{
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(0,0,0,0.9);
+}
+#home img{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	margin-top: 150px;
+}
+#typed{
+	color:#0099cc;
+}
+
+/*About Me*/
+.aboutMe-js-wp{	opacity: 0;	}
+.aboutMe-js-wp .animate__animated{	opacity: 1;	}
+
+.skills-js-wp{	opacity: 0;	}
+.skills-js-wp .animate__animated{	opacity: 1;	}
+
+.project-js-wp .p1{	opacity: 0;	}
+.project-js-wp .p1 .animate__animated{	opacity: 1;	}
+
+.project-js-wp .p2{	opacity: 0;	}
+.project-js-wp .p2 .animate__animated{	opacity: 1;	}
+
+
+.exper-left-js-wp{	opacity: 0;	}
+.exper-left-js-wp .animate__animated{	opacity: 1;	}
+
+
+.exper-right-js-wp{	opacity: 0;	}
+.exper-right-js-wp .animate__animated{	opacity: 1;	}
+
+.achieve-right-js-wp{	opacity: 0;	}
+.achieve-right-js-wp .animate__animated{	opacity: 1;	}
+
+.achieve-left-js-wp{	opacity: 0;	}
+.achieve-left-js-wp .animate__animated{	opacity: 1;	}
+
+
+.resume-btn{
+	background-color: #e6005c;
+	color: #fff;
+}
+.resume-btn:hover{
+	background-color:#ff3385;
+	color: #fff;
+}
+#home h1{	font-family: 'Crimson Text', serif; font-size: 35px;}
+h2{
+	font-family: 'Satisfy', cursive;
+	border-bottom:1px solid #d6d6c2;
+	font-size: 40px;
+}
+h4{ font-size: 25px; }
+
+h3{ font-family: 'Satisfy', cursive; }
+
+#aboutMe p,#experience,#achievement{	font-family: 'Crimson Text', serif; font-size: 20px;}
+
+#experience,#achievement{ font-size: 18px;}
+
+.project-training,.workshop,.isp,.campus-amd,.hackerrank,.kyp{
+	height: auto;
+	width: 500px;
+	background-color: #fff;
+	padding-left:25px;
+	padding-top:15px;
+	padding-right:5px;	
+	margin-left: 50px;	
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px grey;
+}
+.heading{
+	font-family: 'Courgette', cursive;
+	font-size: 20px;
+	color: #ff6600;	
+}
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 40px solid #fff;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	left:33px;
+	box-shadow: 5px grey;
+	z-index: 999;
+}
+.circle{
+	height: 30px;
+ 	width: 30px;
+  	background-color: #ff0066;
+  	border-radius: 50%;
+}
+.circle-pt{
+	position: absolute;
+	left:-10px;
+	/*top:40px; */
+}
+.circle-w,.circle-i,.circle-i,.circle-ca,.circle-h,.circle-isp,.circle-kyp{
+	position: absolute;
+	left:-10px;
+	/*top:238px; */
+}
+
+#experience{
+	/*height: 950px;*/
+	height: auto;
+}
+/*skills */
+.skill-row{
+	height: 12px;
+	border-radius: 20px;
+	background-color: #aaa;
+	position: relative;
+}
+.skill-row-per{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color:  #0099ff;
+	border-radius: 20px;
+}
+.skills-per-view{
+	position: absolute;
+	left: 100%;
+	bottom: 100%;
+	background-color: #000;
+	color: #fff;
+	line-height: 20px;
+	font-size: 14px;
+	padding: 0 5px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	transform: translateX(-50%);
+}
+.skills-per-view:after{
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-top: 5px solid #000;
+	border-right: 6px solid transparent;
+}
+
+.cpp{ background-color: #ff0066;}
+.java{  background-color:#ff9900;}
+.python{ background-color:#cc0000;}
+.web-dev{  background-color:#2d8659;}
+.oracle{  background-color:#000080;}
+.dsa{  background-color:#ff6600; }*/
+
+/*footer*/
+#footer{
+	height: 200px;
+	width: 100%;
+}
+#back-to-top{
+	border-radius: 50%;
+	border:none;
+	height: 35px;
+	width: 35px;
+	background-color: #000;
+	position: fixed;
+	right:10px;
+	bottom: 10px;
+	display: none;
+}
+#back-to-go:hover{
+	background-color: #aaa;
+}
+.fa-angle-up{
+	color: #fff;
+	font-size: 20px;
+}
+
+/*project*/
+#project h5{
+	margin-top: 10px;
+	color: #fff;
+}
+#project .modal-content img{
+	height: 250px;
+	width: 100%;
+}
+
+#project .modal-body{
+	color: #000;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#project #website .modal-body,#project .modal-body{
+	text-align: center;	
+	font-family: 'Philosopher', sans-serif;
+	font-size: 15px;
+}
+#project #desktopapp .modal-body{font-family: 'Philosopher', sans-serif;}
+
+#chatapp h2{
+	font-size: 40px;
+	border:none;
+}
+#chatapp h1{
+	font-family: 'Philosopher', sans-serif;
+}
+#chatapp p{
+	font-size: 20px;
+	font-family: 'Philosopher', sans-serif;
+}
+#project h3{	color:  #0099cc;	}
+
+/*for mobile view*/
+@media only screen and (max-width: 767px){
+	#menu .menu-content{
+		top: 23%;
+		left: 34%;
+	}
+	#aboutMe,#skills,#project,#experience,#achievement,#contact-me{
+		padding-left: 10px;padding-right: 10px;
+	}
+	.project-training,.workshop,.isp,.campus-amd,.hackerrank,.kyp{
+		width: 200px;
+	}
+	#home img{
+		height: 150px;
+		width: 150px;
+	}
+	h2{	font-size: 30px;}
+
+	#home h1{font-size: 30px;}
+
+	h4{		font-size: 20px;	}
+
+	/*#experience{	height: 1570px;	}*/
+	
+	.circle-w,.circle-i,.circle-ca,.circle-isp,.circle-kyp{
+		position: absolute;
+		left:-10px;
+		/*top:285px; */
+	}
+	{
+		position: absolute;
+		left:0px;
+		/*top:525px; */
+	}
+	{
+		position: absolute;
+		left:0px;
+		/*top:980px; */
+	}
+	{
+		position: absolute;
+		left:0px;
+		/*top:385px; */
+	}
+	{
+		position: absolute;
+		left:0px;
+		/*top:575px; */
+	}
+}
+
+/*visitors count*/
+
+.total-visitor,.new-visitor,.revisit-visitor{
+	height: 80px;
+	width: 80px;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: 0px 0px 8px #aaa;
+}
