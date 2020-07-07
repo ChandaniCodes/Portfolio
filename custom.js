@@ -1,8 +1,3 @@
-	// for skills bar
-		$(window).on('load',function(){
-			
-		});
-
 		// for menu btn
 		$('.btn-menu').click(function(){
 			$('#menu').css('right','0px');
@@ -15,7 +10,7 @@
 
 		// for typing 
 		  typed = new Typed('#typed', {
-		  strings: ['Web Developer','Full Stack Developer','Competitive Programmer'],
+		  strings: ['Web Developer','Full Stack Developer','Freelancer','Competitive Programmer'],
 		  typeSpeed: 70,
 		  backSpeed: 70,
 		  loop:true
